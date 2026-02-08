@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional CV</title>
+    <link rel="stylesheet" href="style.css">
+    <STYLE>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+/* CV WRAPPER */
+.cv {
+    width: 1120px;
+    margin: 40px auto;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 40px;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.header h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 4px;
+    color: #cbd5f5;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+.contact p {
+    margin-bottom: 4px;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    min-height: 600px;
+}
+
+/* LEFT SECTION */
+.left {
+    flex: 3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.block h3 {
+    font-size: 18px;
+    color: #0f172a;
+    border-left: 4px solid #0f172a;
+    padding-left: 10px;
+    margin-bottom: 12px;
+}
+
+.block p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+}
+
+.item span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.item h4 {
+    font-size: 16px;
+    margin-top: 3px;
+    color: #020617;
+}
+
+.item p {
+    margin-top: 5px;
+}
+
+/* RIGHT SECTION */
+.right {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-left: 1px solid #e5e7eb;
+}
+
+/* PHOTO */
+.photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0f172a;
+}
+
+/* SKILLS & LANGUAGES */
+.right h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.right ul {
+    list-style: none;
+}
+
+.right ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+.right p {
+    font-size: 14px;
+    color: #334155;
+}
+
+/* PRINT READY */
+@media print {
+    body {
+        background: none;
+    }
+    .cv {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+    </STYLE>
+</head>
+<body>
+
+<div class="cv">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div>
+            <h1>BAKLA Taha</h1>
+            <h2>stagiaire</h2>
+        </div>
+        <div class="contact">
+            <p>📧 BAKLATAHA1@mail.com</p>
+            <p>📞 +212656477090</p>
+            <p>📍 Casablanca, Morocco</p>
+            <p>🔗 LinkedIn : Taha BAKLA</p>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <section class="left">
+
+            <div class="block">
+                <h3>Profile</h3>
+                <p>
+                    Motivated professional with strong skills in web development
+                    and problem solving. Seeking an opportunity to grow and
+                    contribute to a dynamic organization.
+                </p>
+            </div>
+
+            <div class="block">
+                <h3>Experience</h3>
+
+                <div class="item">
+                    <span>2024</span>
+                    <h4>branding / clothing brand </h4>
+                    <p>
+                        producing cloths 'hoodies' 'sweatshirts' <br>
+                        selling them online by advertising on media.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <span>2023</span>
+                    <h4>mcdonalds / equipment</h4>
+                    <p>
+                        Kitchen (Production): Assembling food items, cooking food, managing the grill, and operating fryers while adhering to food safety and hygiene protocols.
+                    </p>
+                </div>
+            </div>
+
+            <div class="block">
+                <h3>Education</h3>
+
+                <div class="item">
+                    <span>2021 – 2022</span>
+                    <h4>bacalauriat / Sciences Physics Chemistrys</h4>
+                    <p>lycee eddakhla sidimoumen</p>
+                    <br>
+                    <span>2022 – 2024</span>
+                    <h4>deug / economie et gestion</h4>
+                    <p>fsjes ainsebaa</p>
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="right">
+
+            <div class="photo">
+                <img src="IMG_2774.png" alt="Profile Photo">
+            </div>
+
+            <div class="block">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5 / CSS3</li>
+                    <li>python</li>
+                    <li>PHP / MySQL</li>
+                    <li>Problem Solving</li>
+                    <li>Team Working</li>
+                </ul>
+            </div>
+
+            <div class="block">
+                <h3>Languages</h3>
+                <p>Arabic – Native</p>
+                <p>French – Intermediate</p>
+                <p>English – Intermediate</p>
+            </div>
+
+        </aside>
+
+    </main>
+
+</div>
+
+</body>
+</html>
